@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhojaraj — Computer Engineering Student &amp; Aspiring Developer</title>
+<meta name="description" content="Portfolio of Bhojuu, a Computer Engineering student and aspiring developer specializing in web development and AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">Mr.Bhojaraj<span class="cursor">_</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#certificates" class="nav-link">Certificates</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" data-reveal id="home">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="hero-kicker"><span class="status-dot"></span> Computer Engineering Student · Open to opportunities</p>
+        <h1 class="hero-title">Hi, I'm <span>Bhojaraj Patil.</span><br>I build things for the web.</h1>
+        <p class="hero-role">Computer Engineering Student <span class="dot">•</span> Aspiring Developer</p>
+        <p class="hero-text">
+          I'm currently studying Computer Engineering, learning how software and hardware come
+          together to solve real problems. Outside of coursework, I spend my time building small
+          web projects and exploring the basics of AI — mostly to figure out how things actually work
+          under the hood.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <img src="images/profile.png" alt="Portrait of Bhojaraj" class="photo-img">
+        </div>
+
+        <div class="terminal-card" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="terminal-title">about-me.js</span>
+          </div>
+          <pre class="terminal-body"><code><span class="tok-key">const</span> <span class="tok-var">Bhojaraj</span> = {
+  <span class="tok-prop">role</span>: <span class="tok-str">"Computer Engineering Student"</span>,
+  <span class="tok-prop">stack</span>: [<span class="tok-str">"Java"</span>, <span class="tok-str">"Python"</span>, <span class="tok-str">"JS"</span>],
+  <span class="tok-prop">status</span>: <span class="tok-str">"open to internships"</span>,
+  <span class="tok-prop">learning</span>: <span class="tok-bool">true</span>
+};<span class="typed-cursor">|</span></code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about" data-reveal>
+    <div class="section-inner about-grid">
+      <div class="about-media">
+        <div class="about-frame">
+          <img src="images/profile.png" alt="Bhojuu working on a laptop" class="about-img">
+        </div>
+        <div class="stat-row">
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Semesters of coursework</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Personal &amp; class projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">8</span>
+            <span class="stat-label">Core tools &amp; languages</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          Hi, I’m Bhojaraj Patil, a Computer Engineering student with a passion for software development and technology.
+        </p>
+        <p>
+          I enjoy turning ideas into practical applications and exploring how technology can be 
+          used to solve real-world problems. I have experience working with Java, Python, HTML, CSS, 
+          and JavaScript, with a strong foundation in Object-Oriented Programming, Data Structures, and Data Analysis.
+        </p>
+        <p>Currently, I’m focusing on improving my Data Structures and backend development skills
+           while continuously learning and building new projects.My goal is to grow as a skilled software developer,
+            work on meaningful real-world applications, and continuously challenge myself to learn and improve.
+          
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section-tint" id="skills" data-reveal>
+    <div class="section-inner">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-lead">Languages and tools I've used in coursework and personal projects.</p>
+
+      <div class="skills-columns">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Programming Languages</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <span class="skill-name">Java</span>
+              <span class="skill-bar"><span class="skill-fill" style="--level:80%"></span></span>
+            </li>
+            <li class="skill-item">
+              <span class="skill-name">Python</span>
+              <span class="skill-bar"><span class="skill-fill" style="--level:75%"></span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Web Development</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <span class="skill-name">HTML</span>
+              <span class="skill-bar"><span class="skill-fill" style="--level:90%"></span></span>
+            </li>
+            <li class="skill-item">
+              <span class="skill-name">CSS</span>
+              <span class="skill-bar"><span class="skill-fill" style="--level:85%"></span></span>
+            </li>
+            <li class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-bar"><span class="skill-fill" style="--level:75%"></span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Tools &amp; Practices</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <span class="skill-name">Git / GitHub</span>
+              <span class="skill-bar"><span class="skill-fill" style="--level:80%"></span></span>
+            </li>
+            <li class="skill-item">
+              <span class="skill-name">Web Development</span>
+              <span class="skill-bar"><span class="skill-fill" style="--level:80%"></span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects" data-reveal>
+    <div class="section-inner">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-lead">A few things I've built while learning. Replace these with your own work.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/projects/project1.png" alt="Screenshot of the Personal Portfolio Website project">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">
+              This site — a responsive portfolio built from scratch with plain HTML, CSS and
+              JavaScript to showcase my skills and projects for internship applications.
+            </p>
+            <ul class="project-tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <svg class="gh-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/projects/project3.png" alt="Screenshot of the Student skill-protal project">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Student skill-protal</h3>
+            <p class="project-desc">
+              A simple a project is thier student skill-protal there are all information of student and a progress 
+              and also a option to ragistration and sing in and sing out .
+            </p>
+            <ul class="project-tags">
+              <li>HTML</li><li>CSS</li><li>JS</li>
+            </ul>
+            <a href="https://bhojuuu07.github.io/Student.Skill-Portal//" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <svg class="gh-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATES ============ -->
+  <section class="section section-tint" id="certificates" data-reveal>
+    <div class="section-inner">
+      <h2 class="section-title">Certificates</h2>
+      <p class="section-lead">Courses and job simulation I've completed. Swap these images for your own certificates.</p>
+
+      <div class="cert-grid">
+        <figure class="cert-card">
+          <img src="images/certificate1.jpg" alt="Google anal certificate">
+          <figcaption>Google analytics — Course Certificate</figcaption>
+        </figure>
+        <figure class="cert-card">
+          <img src="images/certificate2.png" alt=" Prompt Engineering certificate">
+          <figcaption>AWS Training—Foundations of Prompt Engineering — Course Certificate</figcaption>
+        </figure>
+        <figure class="cert-card">
+          <img src="images/certificate3.jpg" alt="Deloitte —Data Analytics Job Simulation certificate">
+          <figcaption>Deloitte —Data Analytics Job Simulation Certificate</figcaption>
+        </figure>
+        <figure class="cert-card">
+          <img src="images/certificate4.jpg" alt="Deloitte —Technology Job Simulation certificate">
+          <figcaption> Deloitte —Technology Job Simulation Certificate</figcaption>
+        </figure>
+                <figure class="cert-card">
+          <img src="images/certificate5.png" alt="C Training—SpokenTutorial certificate">
+          <figcaption>C Training—SpokenTutorial,EduPyramids, SINE,IIT Bombay — Course Certificate</figcaption>
+        </figure>
+        <figure class="cert-card">
+          <img src="images/certificate6.png" alt="Python3.4.3Training —SpokenTutorial certificate">
+          <figcaption> Python3.4.3Training —SpokenTutorial, EduPyramids, SINE, IIT Bombay— Course Certificate</figcaption>
+        </figure>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience" data-reveal>
+    <div class="section-inner">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-lead">Coursework, self-study, and hands-on practice so far — edit with your own timeline.</p>
+
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">Ongoing</p>
+            <h3 class="timeline-title">Computer Engineering Coursework</h3>
+            <p class="timeline-desc">
+              Studying core subjects including data structures, computer architecture, and
+              programming in Java, Python and C, alongside lab work in digital systems.
+            </p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">Self-directed</p>
+            <h3 class="timeline-title">Web Development Practice</h3>
+            <p class="timeline-desc">
+              Learning HTML, CSS and JavaScript outside of class through small personal projects,
+              tutorials, and building this portfolio site from the ground up.
+            </p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">directed</p>
+            <h3 class="timeline-title">Deloitte —Technology Job Simulation</h3>
+            <p class="timeline-desc">
+              Applying my web development skills and beginning to explore AI fundamentals as part
+              of an internship focused on both areas.
+            </p>
+          </div>
+          <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">directed</p>
+            <h3 class="timeline-title"> Deloitte —Data Analytics Job Simulation</h3>
+            <p class="timeline-desc">
+              Applying my Data Analytics skills and beginning to explore Data Entry as part
+              of an internship focused on both areas.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-tint" id="contact" data-reveal>
+    <div class="section-inner contact-grid">
+      <div class="contact-info">
+        <h2 class="section-title">Contact Me</h2>
+        <p>
+          I'm always happy to connect and talk about web development,
+          AI, or anything code-related. Feel free to reach out.
+        </p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:bhojraj2558@gmail.com">bhojraj2558@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/bhojuuu07/" target="_blank" rel="noopener noreferrer">github.com/bhojuu</a>
+          </li>
+          <li>
+            <span class="contact-label">LinkedIn</span>
+            <a href="https://linkedin.com/in/bhojaraj-patil-1a836842a/" target="_blank" rel="noopener noreferrer">linkedin.com/in/bhojuu</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <span class="form-error" data-error-for="name"></span>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <span class="form-error" data-error-for="email"></span>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What would you like to say?" required></textarea>
+          <span class="form-error" data-error-for="message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p>&copy; <span id="year"></span> Bhojuu. Built with HTML, CSS &amp; JavaScript.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
